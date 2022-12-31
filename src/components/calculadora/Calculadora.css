@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.contenido{
+    top:50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%); 
+    max-width: 300px;
+    border: 10px solid rgb(7, 7, 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: rgb(7, 7, 7);
+    border-radius: 5px;
+}
+
+.botones{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(60px, auto);
+}
+
+.input{
+    height: 75px;
+    width: 280px;
+    background-color: #262834;
+    border: 0;
+    color: white;
+    text-align: right;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+#limpiar{
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+#igual{
+    grid-column: 3/5;
+    grid-row: 5;
+}
+
+.boton{
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #262834;
+    color: #fff;
+    font-weight: 500;
+}
+
+.boton:hover{
+    border: 1px solid #fff;
+}
+
+input:focus,
+input:active,
+button:active {
+    outline: none;
+}
+
+.btn-limpiar{
+    background: #56cbdb;
+}
+
+.btn-operadores{
+    background: #ff5e00;
+}
+
+.btn-resultado{
+    background: #ff006a;
+}
